@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    
     <title>Core Lab</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -57,13 +58,14 @@
         display: none;
         text-align: center;
       }
-      .slide img {
+      .slide img,video {
         display: flex;
         flex-wrap:wrap;
         flex-wrap: inherit;
         height: 500px;
         width:100%;
         margin: 0 auto;
+        object-fit: fill;
       }
       .thumbnail-container {
         display: flex;
@@ -138,8 +140,39 @@
       }
       body {
         margin: 0;
-        font-family: sans-serif;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
+      /*footer*/
+      .footer {
+        background-color: #070617;
+        padding: 20px 0px 20px 0px;
+      }
+      h2{
+        padding-left: 26px;
+        color: white;
+      }
+
+      .footer .col ul {
+        list-style-type: none;
+      }
+      .footer .col ul li {
+        color: #999999;
+        cursor: pointer;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+      }
+      p{
+        color: #999999;
+      }
+      .footer .col ul li:hover {
+        color: #ffffff;
+        transition: .1s;
+        -webkit-transition: .1s;
+        -moz-transition: .1s;
+      }
+
+
     </style>
 </head>
 <body>
@@ -148,12 +181,12 @@
         <nav id="navbar" class="transparent">
           <a href="#"><img class="logo" src="Work/image-removebg-preview.png" height="110" width="123"></a>
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">OUR CORE STRENGTHS</a></li>
-            <li><a href="#">OUR BLOG</a></li>
-            <li><a href="#">CAREERS</a></li>
-            <li><a href="#">CONTACT US</a></li>
+            <li><a href="https://vamshikrishna779.github.io/Corelabs/#">HOME</a></li>
+            <li><a href="https://semicorelabs.com/about-us/">ABOUT US</a></li>
+            <li><a href="https://vamshikrishna779.github.io/Corelabs/#">OUR CORE STRENGTHS</a></li>
+            <li><a href="https://semicorelabs.com/blog-with-sidebar/">OUR BLOG</a></li>
+            <li><a href="https://semicorelabs.com/careers/">CAREERS</a></li>
+            <li><a href="https://semicorelabs.com/contact-us/">CONTACT US</a></li>
           </ul>
         </nav>
       </header>
@@ -203,24 +236,82 @@
       <img src="Work/slide3.jpg" alt="Thumbnail 3">
     </div>
     <div class="thumbnail" onclick="selectSlide(3)">
-      <img src="Work/slide4.jpg" alt="Thumbnail 3">
+      <img src="Work/slide4.jpg" alt="Thumbnail 4">
     </div>
     <div class="thumbnail" onclick="selectSlide(4)">
-      <img src="Work/slide5.png" alt="Thumbnail 3">
+      <img src="Work/slide5.png" alt="Thumbnail 5">
     </div>
   </div>
 
-  <div style="display: flex;flex-direction: row; justify-content: space-between; flex-wrap:wrap; padding:120px 10% 0px 10%;">
-    <div><img style="max-height: 500px; max-width:100%;" src="Work/micro1.jpg"></div>
+  <div style="display: flex;flex-direction: row; justify-content:space-around; flex-wrap:wrap; padding:100px 10% 0px 10%;">
+    <div><img style="max-height: 500px; max-width:100%;border-radius: 20px;" src="Work/micro1.jpg" controls autoplay></div>
   <div style="max-height: 500px; max-width:600px;">
-    <h1>ABOUT SCL</h1>
-    <p>Battle-tested leadership. Forged-by-fire technology.
-    We provide end-to-end semiconductor design services including RTL & ASIC Design, Physical Design, STA, RTL Verification, DFT, Circuit Design & Layout, FPGA, Foundation IP design, PSV, and Emulation.
-    Our team of engineers have successfully delivered multiple ASIC design tape-outs in advanced technology nodes all the way to 5nm. We bring in competitive advantage, agile mindset, and innovation to address technological challenges and transform businesses.
-    With our expertise in electronic design, platform design, automation, embedded and software technologies, we Strategize, Innovate, and Design smart solutions, powering-up products for high-performance and seamless connectivity.</p>
+    <h3 style="color: blue;">ABOUT SCL</h3>
+    <h1>Battle-tested leadership. Forged-by-fire technology.</h1>
+    <p>We provide end-to-end semiconductor design services including RTL & ASIC Design, Physical Design, STA, RTL Verification, DFT, Circuit Design & Layout, FPGA, Foundation IP design, PSV, and Emulation.</p>
+  <p>Our team of engineers have successfully delivered multiple ASIC design tape-outs in advanced technology nodes all the way to 5nm. We bring in competitive advantage, agile mindset, and innovation to address technological challenges and transform businesses.</p>
+  <p>With our expertise in electronic design, platform design, automation, embedded and software technologies, we Strategize, Innovate, and Design smart solutions, powering-up products for high-performance and seamless connectivity.</p>
+  <br>
+  <input type="submit" value="KNOW MORE" style="background-color: blue;padding: 20px 35px 20px 35px;color: white;font-weight: bolder; border-radius: 30px;border: none;">
+</div>
   </div>
-  </div>
-  
+  <br><br>
+  <div>
+  <h2 style="color: blue;text-shadow: 20px;text-align: center;">OUR CORE STRENGTHS</h2>
+</div>
+
+    <div style="display: flex;flex-direction: row; flex-wrap: wrap;justify-content: space-around;" class="footer">
+        <div  class="col">
+          <img src="work/image-removebg-preview.png" height="110" width="123">
+          <p>Semicorelabs ("SCL") is a California based<br> 
+            company with design centers in India<br> 
+            (Hyderabad and Bangalore) with design and <br> 
+            service expertise in Analog/Digital Design <br> 
+            Verification, FPGA, Technology foundation IP <br> 
+            Development, IOT, expanding to AI & and ML <br> 
+            services. We provide VLSI & Embedded <br> 
+            engineering services for the DV, DFT, PD, FPGA,<br>  
+            Mixed signal, Si Validation, and many more.</p>
+        </div>
+      <div class="col">
+        <h2>Usefull Links</h2>
+        <ul>
+          <li>Home</li><br><br>
+          <li>About Us</li><br><br>
+          <li>Contact Us</li><br><br>
+          <li>Our Blog</li><br><br>
+          <li>Career</li><br><br>
+        </ul>
+      </div>
+      
+      <div class="col">
+        <h2>Our Capabilities</h2>
+        <ul>
+          
+          <li>Digital Frontend</li><br><br>
+          <li>Digital Backend</li><br><br>
+          <li>FPGA</li><br><br>
+          <li>Embedded Systems</li><br><br>
+          <li>IOT Technologies</li><br><br>
+          <li>4G Technology</li><br><br>
+          <li>5G Technology</li><br><br>
+          <li>Analog, Mixed Signal & <br>Technology Foundation</li><br><br><br>
+          <li>Automation, AI & ML</li><br><br>
+
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Contact Info</h2>
+        <ul>
+          <li>Email: contact@semicorelabs.com</li><br><br>
+          <li>Contact Number :- +1(619) 629 0616 (USA)</li><br><br>
+          <li>(+91)-935 306 1720 (INDIA)</li><br>
+          <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+          <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>    
+        </ul>
+      </div>
   <script>
     // JavaScript code for the scroll effect
 window.addEventListener("scroll", function() {
@@ -263,6 +354,8 @@ window.addEventListener("scroll", function() {
       slides[index].style.display = "block";
       thumbnails[index].classList.add("selected");
       slideBarSymbols[index].classList.add("active");
+
+      
     }
 
     function selectSlide(index) {
@@ -297,7 +390,7 @@ window.addEventListener("scroll", function() {
     }
 
     function startSlideShow() {
-      slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+      slideInterval = setInterval(nextSlide, 4000); // Change slide every 3 seconds
     }
 
     function stopSlideShow() {
