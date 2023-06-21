@@ -2,163 +2,151 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Semicorelabs</title>
-     <link rel="icon" href="Work/image-removebg-preview.png" type="image/icon type">
+    <title>Core Lab</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-          nav {
+      
+      nav {
       padding: 20px 0px 20px 0px;
       position: fixed;
-      width: 100%;
+      width: 105%;
       z-index: 999;
       transition: background-color 0.3s ease;
-    }
-
-    nav.transparent {
-      background-color: transparent;
-    }
-
-    nav.scrolled {
-      background-color: #f8f1f1;
-    }
-
-    nav,
-    ul {
-      list-style-type: none;
-      margin: -10px;
-      overflow: hidden;
-    }
-
-    .logo,
-    li {
-      float: left;
-    }
-
-    li a img {
-      padding-left: 50px;
-    }
-
-    .logo {
-      padding-left: 13%;
-    }
-
-    li a {
-      display: flex;
-      color: rgb(246, 232, 232);
-      text-align: center;
-      padding: 30px 20px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    li a:hover {
-      color: blue;
-    }
-    
-
-        .slideshow-container {
-          position: relative;
-          height: 500px;
-        }
-
-        .slide {
-          display: none;
-          text-align: center;
-        }
-
-        .slide img {
-          max-height: 500px;
-          width:100%;
-          margin: 0 auto;
-        }
-        .thumbnail-container {
-          display: flex;
-          justify-content: center;
-          background-color: black;
-        }
-
-        .thumbnail {
-          width: 90px;
-          height: 60px;
-          margin: 0 5px;
-          cursor: pointer;
-          padding: 10px 0px 10px 0px;
-        }
-
-        .thumbnail img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
+      }
+      nav.transparent {
+        background-color: transparent;
         
-        .slide-bar {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          bottom: 20px;
-          left: 0;
-          width: 100%;
-          z-index: 2;
-        }
+      }
+      nav.scrolled {
+        background-color: white;
+        width: 105%;
+      }
+      nav,
+      ul {
+        list-style-type: none;
+        margin: -10px;
+        overflow: hidden;
+      }
+      .logo,li {
+        float: left;
+      }
+      li a img {
+        padding-left: 50px;
+      }
+      .logo {
+        padding-left: 13%;
+      }
+      li a {
+        display: flex;
+        color: rgb(246, 232, 232);
+        text-align: center;
+        margin-top: 30px;
+        padding: 0px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      li a:hover {
+        color: blue;
+      }
+      /* Slideshow Styles */
+      .slideshow-container {
+        position: relative;
+      }
+      .slide {
+        display: none;
+        text-align: center;
+      }
+      .slide img {
+        display: flex;
+        flex-wrap:wrap;
+        flex-wrap: inherit;
+        height: 500px;
+        width:100%;
+        margin: 0 auto;
+      }
+      .thumbnail-container {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+      }
+      .thumbnail {
+        width: 90px;
+        height: 60px;
+        margin: 0 5px;
+        cursor: pointer;
+        padding: 10px 0px 10px 0px;
+      }
+      .thumbnail img {
+        display: flex;
+        flex-wrap:wrap;
+        flex-wrap: inherit;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* Slide Bar Styles */
+      .slide-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+      }
+      .slide-bar-symbol {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #888;
+        margin: 0 4px;
+      }
+      .slide-bar-symbol.active {
+        background-color: white;
+      }
+      /* Slider Navigation Styles */
+      .slider-navigation {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        z-index: 4;
+      }
+      .slider-navigation .sliders {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 10%;
+        cursor: pointer;
+        margin: 0 10px;
+      }
+      .slider-navigation .sliders i {
+        font-size: 20px;
+      }
 
-        .slide-bar-symbol {
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          background-color: #888;
-          margin: 0 4px;
-        }
-
-        .slide-bar-symbol.active {
-          background-color: white;
-        }
-
-        .slider-navigation {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-          z-index: 2;
-        }
-
-        .slider-navigation .sliders {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 40px;
-          height: 40px;
-          background-color: rgba(0, 0, 0, 0.3);
-          color: white;
-          border-radius: 10%;
-          cursor: pointer;
-          margin: 0 10px;
-        }
-
-        .slider-navigation .sliders i {
-          font-size: 20px;
-        }
-
-        .slider-navigation .sliders:hover {
-          background-color: rgba(0, 0, 0, 0.6);
-        }
-
-        body {
-          margin: 0;
-          font-family: sans-serif;
-        }
+      .slider-navigation .sliders:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
     </style>
 </head>
 <body>
   
     <header>
         <nav id="navbar" class="transparent">
-          <a href="#"><img class="logo" src="Work/image-removebg-preview.png" height="110" width="123"></a>
+          <a href="#"><img class="logo" src="work/image-removebg-preview.png" height="110" width="123"></a>
           <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT US</a></li>
@@ -171,16 +159,24 @@
       </header>
   <div class="slideshow-container">
     <div class="slide">
-      <img src="Work/slide1.jpg" alt="Slide 1">
+      <img src="work/slide1.jpg" alt="Slide 1">
     </div>
     <div class="slide">
-      <img src="Work/slide2.jpg" alt="Slide 2">
+      <img src="work/slide2.jpg" alt="Slide 2">
     </div>
     <div class="slide">
-      <img src="Work/slide3.jpg" alt="Slide 3">
+      <img src="work/slide3.jpg" alt="Slide 3">
+    </div>
+    <div class="slide">
+      <img src="work/slide4.jpg" alt="Slide 4">
+    </div>
+    <div class="slide">
+      <img src="work/slide5.png" alt="Slide 5">
     </div>
 
     <div class="slide-bar">
+      <div class="slide-bar-symbol"></div>
+      <div class="slide-bar-symbol"></div>
       <div class="slide-bar-symbol"></div>
       <div class="slide-bar-symbol"></div>
       <div class="slide-bar-symbol"></div>
@@ -198,41 +194,59 @@
 
   <div class="thumbnail-container">
     <div class="thumbnail selected" onclick="selectSlide(0)">
-      <img src="Work/slide1.jpg" alt="Thumbnail 1">
+      <img src="work/slide1.jpg" alt="Thumbnail 1">
     </div>
     <div class="thumbnail" onclick="selectSlide(1)">
-      <img src="Work/slide2.jpg" alt="Thumbnail 2">
+      <img src="work/slide2.jpg" alt="Thumbnail 2">
     </div>
     <div class="thumbnail" onclick="selectSlide(2)">
-      <img src="Work/slide3.jpg" alt="Thumbnail 3">
+      <img src="work/slide3.jpg" alt="Thumbnail 3">
+    </div>
+    <div class="thumbnail" onclick="selectSlide(3)">
+      <img src="work/slide4.jpg" alt="Thumbnail 3">
+    </div>
+    <div class="thumbnail" onclick="selectSlide(4)">
+      <img src="work/slide5.png" alt="Thumbnail 3">
     </div>
   </div>
 
-
+  <div style="display: flex;flex-direction: row; justify-content: space-between; flex-wrap:wrap; padding:120px 10% 0px 10%;">
+    <div><img style="max-height: 500px; max-width:100%;" src="work/micro1.jpg"></div>
+  <div style="max-height: 500px; max-width:600px;">
+    <h1>ABOUT SCL</h1>
+    <p>Battle-tested leadership. Forged-by-fire technology.
+    We provide end-to-end semiconductor design services including RTL & ASIC Design, Physical Design, STA, RTL Verification, DFT, Circuit Design & Layout, FPGA, Foundation IP design, PSV, and Emulation.
+    Our team of engineers have successfully delivered multiple ASIC design tape-outs in advanced technology nodes all the way to 5nm. We bring in competitive advantage, agile mindset, and innovation to address technological challenges and transform businesses.
+    With our expertise in electronic design, platform design, automation, embedded and software technologies, we Strategize, Innovate, and Design smart solutions, powering-up products for high-performance and seamless connectivity.</p>
+  </div>
+  </div>
+  
   <script>
-    // Header Scroll Event Listener
-    window.addEventListener("scroll", function () {
-      var header = document.querySelector("header");
-      var headerLinks = document.querySelectorAll(".header-link");
+    // JavaScript code for the scroll effect
+window.addEventListener("scroll", function() {
+  var navbar = document.getElementById("navbar");
+  var headerLinks = document.querySelectorAll("nav ul li a");
 
-      if (window.scrollY > document.querySelector(".slideshow-container").offsetHeight) {
-        header.style.backgroundColor = "white";
-        header.style.color = "black";
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("scrolled");
+    navbar.classList.remove("transparent");
 
-        headerLinks.forEach(function (link) {
-          link.style.color = "black";
-        });
-      } else {
-        header.style.backgroundColor = "#333";
-        header.style.color = "white";
-
-        headerLinks.forEach(function (link) {
-          link.style.color = "white";
-        });
-      }
+    headerLinks.forEach(function(link) {
+      link.style.color = "black";
+      link.classList.add("scrolled-link");
     });
+  } else {
+    navbar.classList.add("transparent");
+    navbar.classList.remove("scrolled");
 
-    
+    headerLinks.forEach(function(link) {
+      link.style.color = "white";
+    });
+  }
+});
+
+
+    // Slideshow Logic
     var slides = document.querySelectorAll(".slide");
     var thumbnails = document.querySelectorAll(".thumbnail");
     var slideBarSymbols = document.querySelectorAll(".slide-bar-symbol");
@@ -283,7 +297,7 @@
     }
 
     function startSlideShow() {
-      slideInterval = setInterval(nextSlide, 3000); 
+      slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
     }
 
     function stopSlideShow() {
@@ -304,9 +318,9 @@
 
     document.addEventListener("keydown", handleKeyboardEvent);
 
-    startSlideShow();
+    startSlideShow(); // Start the auto-sliding
 
-    showSlide(currentSlide); 
+    showSlide(currentSlide); // Show initial slide
   </script>
 </body>
 </html>
