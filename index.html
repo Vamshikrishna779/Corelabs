@@ -25,14 +25,12 @@
         background-color: white;
         width: 105%;
       }
-      nav,
-      ul {
+      nav,ul {
         list-style-type: none;
         margin: -10px;
         overflow: hidden;
       }
-      .logo,
-      li {
+      .logo,li {
         float: left;
       }
       li a img {
@@ -57,6 +55,7 @@
       /* Slideshow Styles */
       .slideshow-container {
         position: relative;
+        
       }
       .slide {
         display: none;
@@ -142,32 +141,33 @@
         background-color: rgba(0, 0, 0, 0.6);
       }
       
-      .footer {
+      .footer,col{
     display: flex;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0b0a0a;
+    color: white;
+    padding: 40px;
   }
-  
-  .col {
-    flex-basis: 25%;
+
+  .col p{
+    width: max-content;
   }
-  
-  
   .foot {
-    
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  ul {
+  .abc {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
-  ul li {
+  .bc{
+    float: inherit;
+  }
+  .abc .bc {
     margin-bottom: 5px;
   }
   
@@ -203,7 +203,7 @@
           </ul>
         </nav>
       </header>
-  <div class="slideshow-container">
+  <div class="slideshow-container" >
     <div class="slide">
       <img src="Work/slide1.jpg" alt="Slide 1">
     </div>
@@ -292,34 +292,34 @@
   </div>
   <div class="col">
     <h2 class="foot">Useful Links</h2>
-    <ul>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Our Blog</li>
-      <li>Career</li>
+    <ul class="abc">
+      <li class="bc">Home</li>
+      <li class="bc">About Us</li>
+      <li class="bc">Contact Us</li>
+      <li class="bc">Our Blog</li>
+      <li class="bc">Career</li>
     </ul>
   </div>
   <div class="col">
     <h2 class="foot">Our Capabilities</h2>
-    <ul>
-      <li>Digital Frontend</li>
-      <li>Digital Backend</li>
-      <li>FPGA</li>
-      <li>Embedded Systems</li>
-      <li>IOT Technologies</li>
-      <li>4G Technology</li>
-      <li>5G Technology</li>
-      <li>Analog, Mixed Signal &amp; <br>Technology Foundation</li>
-      <li>Automation, AI &amp; ML</li>
+    <ul class="abc">
+      <li class="bc">Digital Frontend</li>
+      <li class="bc">Digital Backend</li>
+      <li class="bc">FPGA</li>
+      <li class="bc">Embedded Systems</li>
+      <li class="bc">IOT Technologies</li>
+      <li class="bc">4G Technology</li>
+      <li class="bc">5G Technology</li>
+      <li class="bc">Analog, Mixed Signal &amp; <br>Technology Foundation</li>
+      <li class="bc">Automation, AI &amp; ML</li>
     </ul>
   </div>
   <div class="col">
     <h2 class="foot">Contact Info</h2>
-    <ul>
-      <li>Email: contact@semicorelabs.com</li>
-      <li>Contact Number: +1(619) 629 0616 (USA)</li>
-      <li>(+91)-935 306 1720 (INDIA)</li>
+    <ul class="abc">
+      <li class="bc">Email: contact@semicorelabs.com</li>
+      <li class="bc">Contact Number: +1(619) 629 0616 (USA)</li>
+      <li class="bc">(+91)-935 306 1720 (INDIA)</li>
       <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
       <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
       <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
