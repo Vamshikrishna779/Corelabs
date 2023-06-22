@@ -58,14 +58,13 @@
         display: none;
         text-align: center;
       }
-      .slide img,video {
+      .slide img{
         display: flex;
         flex-wrap:wrap;
         flex-wrap: inherit;
         height: 500px;
         width:100%;
-        margin: 0 auto;
-        object-fit: fill;
+        
       }
       .thumbnail-container {
         display: flex;
@@ -141,6 +140,10 @@
       
       /*footer*/
       .footer {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: space-around;
         background-color: #070617;
         padding: 20px 0px 20px 0px;
       }
@@ -257,7 +260,7 @@
 </div><br><br><br><br>
 
 
-    <div style="display: flex;flex-direction: row; flex-wrap: wrap;justify-content: space-around;" class="footer">
+    <div class="footer">
         <div class="col">
           <img src="Work/image-removebg-preview.png" height="110" width="123">
           <p>Semicorelabs ("SCL") is a California based<br> 
