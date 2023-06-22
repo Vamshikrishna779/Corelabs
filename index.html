@@ -53,6 +53,7 @@
       /* Slideshow Styles */
       .slideshow-container {
         position: relative;
+        width: 100%;
       }
       .slide {
         display: none;
@@ -143,11 +144,12 @@
         display: flex;
         flex-direction: row; 
         flex-wrap: wrap;
+        width: 100%;
         justify-content: space-around;
         background-color: #070617;
         padding: 20px 0px 20px 0px;
       }
-      h2{
+      .foot{
         padding-left: 26px;
         color: white;
       }
@@ -171,6 +173,22 @@
         -webkit-transition: .1s;
         -moz-transition: .1s;
       }
+      @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .slideshow-container,
+  .thumbnail-container,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
 
 
     </style>
@@ -274,7 +292,7 @@
             Mixed signal, Si Validation, and many more.</p>
         </div>
       <div class="col">
-        <h2>Usefull Links</h2>
+        <h2 class="foot">Usefull Links</h2>
         <ul>
           <li>Home</li><br><br>
           <li>About Us</li><br><br>
@@ -285,7 +303,7 @@
       </div>
       
       <div class="col">
-        <h2>Our Capabilities</h2>
+        <h2 class="foot">Our Capabilities</h2>
         <ul>
           
           <li>Digital Frontend</li><br><br>
@@ -301,7 +319,7 @@
         </ul>
       </div>
       <div class="col">
-        <h2>Contact Info</h2>
+        <h2 class="foot">Contact Info</h2>
         <ul>
           <li>Email: contact@semicorelabs.com</li><br><br>
           <li>Contact Number :- +1(619) 629 0616 (USA)</li><br><br>
