@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html></html>
 <head>
     <meta charset="utf-8">
-    
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Core Lab</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-      
+     
       nav {
       padding: 20px 0px 20px 0px;
       position: fixed;
@@ -22,8 +22,7 @@
         background-color: white;
         width: 105%;
       }
-      nav,
-      ul {
+      nav,ul {
         list-style-type: none;
         margin: -10px;
         overflow: hidden;
@@ -144,10 +143,6 @@
       }
       /*footer*/
       .footer {
-        display: flex;
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: space-around;
         background-color: #070617;
         padding: 20px 0px 20px 0px;
       }
@@ -182,38 +177,38 @@
 <body>
   
     <header>
-        <nav id="navbar" class="transparent">
-          <a href="#"><img class="logo" src="work/image-removebg-preview.png" height="110" width="123"></a>
+        <nav id="navbar" class="scrolled">
+          <a href="#"><img class="logo" src="Work/image-removebg-preview.png" height="110" width="123"></a>
           <ul>
-            <li><a href="https://vamshikrishna779.github.io/Corelabs/#">HOME</a></li>
-            <li><a href="https://semicorelabs.com/about-us/">ABOUT US</a></li>
-            <li><a href="https://vamshikrishna779.github.io/Corelabs/#">OUR CORE STRENGTHS</a></li>
-            <li><a href="https://semicorelabs.com/blog-with-sidebar/">OUR BLOG</a></li>
-            <li><a href="https://semicorelabs.com/careers/">CAREERS</a></li>
-            <li><a href="https://semicorelabs.com/contact-us/">CONTACT US</a></li>
+            <li><a href="https://vamshikrishna779.github.io/Corelabs/#" class="scrolled-link" style="color: black;">HOME</a></li>
+            <li><a href="https://semicorelabs.com/about-us/" class="scrolled-link" style="color: black;">ABOUT US</a></li>
+            <li><a href="https://vamshikrishna779.github.io/Corelabs/#" class="scrolled-link" style="color: black;">OUR CORE STRENGTHS</a></li>
+            <li><a href="https://semicorelabs.com/blog-with-sidebar/" class="scrolled-link" style="color: black;">OUR BLOG</a></li>
+            <li><a href="https://semicorelabs.com/careers/" class="scrolled-link" style="color: black;">CAREERS</a></li>
+            <li><a href="https://semicorelabs.com/contact-us/" class="scrolled-link" style="color: black;">CONTACT US</a></li>
           </ul>
         </nav>
       </header>
   <div class="slideshow-container">
-    <div class="slide">
-      <img src="work/slide1.jpg" alt="Slide 1">
+    <div class="slide" style="display: none;">
+      <img src="Work/slide1.jpg" alt="Slide 1">
     </div>
-    <div class="slide">
-      <img src="work/slide2.jpg" alt="Slide 2">
+    <div class="slide" style="display: block;">
+      <img src="Work/slide2.jpg" alt="Slide 2">
     </div>
-    <div class="slide">
-      <img src="work/slide3.jpg" alt="Slide 3">
+    <div class="slide" style="display: none;">
+      <img src="Work/slide3.jpg" alt="Slide 3">
     </div>
-    <div class="slide">
-      <img src="work/slide4.jpg" alt="Slide 4">
+    <div class="slide" style="display: none;">
+      <img src="Work/slide4.jpg" alt="Slide 4">
     </div>
-    <div class="slide">
-      <img src="work/slide5.png" alt="Slide 5">
+    <div class="slide" style="display: none;">
+      <img src="Work/slide5.png" alt="Slide 5">
     </div>
 
     <div class="slide-bar">
       <div class="slide-bar-symbol"></div>
-      <div class="slide-bar-symbol"></div>
+      <div class="slide-bar-symbol active"></div>
       <div class="slide-bar-symbol"></div>
       <div class="slide-bar-symbol"></div>
       <div class="slide-bar-symbol"></div>
@@ -230,29 +225,29 @@
   </div>
 
   <div class="thumbnail-container">
-    <div class="thumbnail selected" onclick="selectSlide(0)">
-      <img src="work/slide1.jpg" alt="Thumbnail 1">
+    <div class="thumbnail" onclick="selectSlide(0)">
+      <img src="Work/slide1.jpg" alt="Thumbnail 1">
     </div>
-    <div class="thumbnail" onclick="selectSlide(1)">
-      <img src="work/slide2.jpg" alt="Thumbnail 2">
+    <div class="thumbnail selected" onclick="selectSlide(1)">
+      <img src="Work/slide2.jpg" alt="Thumbnail 2">
     </div>
     <div class="thumbnail" onclick="selectSlide(2)">
-      <img src="work/slide3.jpg" alt="Thumbnail 3">
+      <img src="Work/slide3.jpg" alt="Thumbnail 3">
     </div>
     <div class="thumbnail" onclick="selectSlide(3)">
-      <img src="work/slide4.jpg" alt="Thumbnail 4">
+      <img src="Work/slide4.jpg" alt="Thumbnail 4">
     </div>
     <div class="thumbnail" onclick="selectSlide(4)">
-      <img src="work/slide5.png" alt="Thumbnail 5">
+      <img src="Work/slide5.png" alt="Thumbnail 5">
     </div>
   </div>
 
-  <div style="display: flex;flex-direction: row; justify-content:space-around; flex-wrap:wrap; padding:100px 10% 100px 10%;margin-bottom:100px;">
-    <div><img style="max-height: 500px; max-width:100%;border-radius: 20px;" src="work/micro1.jpg" controls autoplay></div>
-  <div style="height: 500px; max-width:600px;">
+    <div style="display: flex;flex-direction: row; justify-content:space-around; flex-wrap:wrap; padding:100px 10% 100px 10%;margin-bottom:100px;">
+    <div><img style="max-height: 500px; max-width:100%;border-radius: 20px;" src="Work/micro1.jpg" controls="" autoplay=""></div>
+  <div style="max-height: 500px; max-width:600px;">
     <h3 style="color: blue;">ABOUT SCL</h3>
     <h1>Battle-tested leadership. Forged-by-fire technology.</h1>
-    <p>We provide end-to-end semiconductor design services including RTL & ASIC Design, Physical Design, STA, RTL Verification, DFT, Circuit Design & Layout, FPGA, Foundation IP design, PSV, and Emulation.</p>
+    <p>We provide end-to-end semiconductor design services including RTL &amp; ASIC Design, Physical Design, STA, RTL Verification, DFT, Circuit Design &amp; Layout, FPGA, Foundation IP design, PSV, and Emulation.</p>
   <p>Our team of engineers have successfully delivered multiple ASIC design tape-outs in advanced technology nodes all the way to 5nm. We bring in competitive advantage, agile mindset, and innovation to address technological challenges and transform businesses.</p>
   <p>With our expertise in electronic design, platform design, automation, embedded and software technologies, we Strategize, Innovate, and Design smart solutions, powering-up products for high-performance and seamless connectivity.</p>
   <br>
@@ -263,16 +258,17 @@
   <h2 style="color: blue;text-shadow: 20px;text-align: center;">OUR CORE STRENGTHS</h2>
 </div><br><br><br><br>
 
-    <div class="footer">
-        <div  class="col">
-          <img src="work/image-removebg-preview.png" height="110" width="123">
+
+    <div style="display: flex;flex-direction: row; flex-wrap: wrap;justify-content: space-around;" class="footer">
+        <div class="col">
+          <img src="Work/image-removebg-preview.png" height="110" width="123">
           <p>Semicorelabs ("SCL") is a California based<br> 
             company with design centers in India<br> 
             (Hyderabad and Bangalore) with design and <br> 
             service expertise in Analog/Digital Design <br> 
             Verification, FPGA, Technology foundation IP <br> 
-            Development, IOT, expanding to AI & and ML <br> 
-            services. We provide VLSI & Embedded <br> 
+            Development, IOT, expanding to AI &amp; and ML <br> 
+            services. We provide VLSI &amp; Embedded <br> 
             engineering services for the DV, DFT, PD, FPGA,<br>  
             Mixed signal, Si Validation, and many more.</p>
         </div>
@@ -298,8 +294,8 @@
           <li>IOT Technologies</li><br><br>
           <li>4G Technology</li><br><br>
           <li>5G Technology</li><br><br>
-          <li>Analog, Mixed Signal & <br>Technology Foundation</li><br><br><br>
-          <li>Automation, AI & ML</li><br><br>
+          <li>Analog, Mixed Signal &amp; <br>Technology Foundation</li><br><br><br>
+          <li>Automation, AI &amp; ML</li><br><br>
 
         </ul>
       </div>
@@ -418,5 +414,7 @@ window.addEventListener("scroll", function() {
 
     showSlide(currentSlide); // Show initial slide
   </script>
-</body>
+
+
+</div></body>
 </html>
